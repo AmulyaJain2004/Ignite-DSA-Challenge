@@ -5,7 +5,6 @@ int linear_search(int* par, int size_arr, int target)
 {
     for (int i = 0; i < size_arr; i++)
     {
-
         if (*(par + i) == target)
         {
             return i;
