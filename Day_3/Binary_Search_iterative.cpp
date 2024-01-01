@@ -3,8 +3,8 @@ using namespace std;
 
 int Binary_Search(int arr[], int size_arr, int search)
 {
-    int left_index = arr[0];
-    int right_index = arr[size_arr - 1];
+    int left_index = 0;
+    int right_index = size_arr - 1;
 
     while (left_index <= right_index)
     {
@@ -15,11 +15,13 @@ int Binary_Search(int arr[], int size_arr, int search)
         }
         else if (arr[middle_index] > search)
         {
-            left_index = middle_index + 1;
+            left_index = middle_index + 1; // since at middle index, term to be searched is not present and it is greater than the term,
+                                           // so it can't be present in first half and hence we changed left index to be middle index + 1 to search in second half.
         }
         else // if arr[middle_index] < search
         {
-            right_index = middle_index - 1;
+            right_index = middle_index - 1;// since at middle index, term to be searched is not present and it is lesser than the term,
+                                           // so it can't be present in second half and hence we changed right index to be middle index - 1 to search in first half.
         }
     }
     return -1;
