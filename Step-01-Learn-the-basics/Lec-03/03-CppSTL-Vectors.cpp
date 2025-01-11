@@ -21,7 +21,11 @@ void explainVectors()
     vector<int> v2(v1); // v1 is copied to v2
 
     // iterating through a loop
-    vector 
+    vector<int>::iterator it = v.begin();
+    it ++;
+    cout << *(it) << " ";
+
+    
 
     return ;
 }
