@@ -3,8 +3,13 @@ using namespace std; // useful when we don't want to not write always std:: befo
 
 void print()
 {
-    cout << "Amulya";
+    cout << "Amulya" << endl;
     return;
+}
+
+int add(int a, int b)
+{
+    return a + b;
 }
 
 int main()
@@ -12,6 +17,8 @@ int main()
     int a;
     cin >> a;
     print();
-    cout << a;
+    cout << a << endl;
+    int s = add(1, 5);
+    cout << s;
     return 0;
 }
