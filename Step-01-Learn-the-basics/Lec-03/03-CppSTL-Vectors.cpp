@@ -26,8 +26,6 @@ void explainVectors()
     cout << *(it) << " ";
 
     it = v.end();
-    
-
     return ;
 }
 
